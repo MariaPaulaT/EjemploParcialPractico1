@@ -28,7 +28,7 @@ public class MedicoDTO implements Serializable {
     private String name;
     private String secondName;
     private String record;
-    private String especiality;
+    private String specialty;
    
 
     /**
@@ -50,7 +50,7 @@ public class MedicoDTO implements Serializable {
             this.name = medicoEntity.getName();
             this.secondName = medicoEntity.getSecondName();
             this.record = medicoEntity.getRecord();
-            this.especiality = medicoEntity.getSpecialty();
+            this.specialty = medicoEntity.getSpecialty();
              
         }
     }
@@ -146,17 +146,17 @@ public class MedicoDTO implements Serializable {
     }
 
     /**
-     * @return the especiality
+     * @return the specialty
      */
     public String getEspeciality() {
-        return especiality;
+        return specialty;
     }
 
     /**
-     * @param especiality the especiality to set
+     * @param specialty the specialty to set
      */
-    public void setEspeciality(String especiality) {
-        this.especiality = especiality;
+    public void setEspeciality(String specialty) {
+        this.specialty = specialty;
     }
 }
 
